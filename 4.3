@@ -1,0 +1,27 @@
+4.3 (Conversion from kilograms to pounds) Write a program that displays the following
+table (note that 1 kilogram is 2.2 pounds):
+Kilograms Pounds
+1 2.2
+3 6.6
+...
+197 433.4
+199 437.8
+
+
+import java.util.Scanner;
+
+ public class Conversion {
+ public static void main(String[] args) {
+ 
+ int Kilograms = 1;
+ double Pounds = 0;
+ System.out.println("Kilograms    Pounds");
+ 
+ while (Kilograms < 200) {
+   Pounds = Math.round(Kilograms * 2.2 * 100) / 100.0d;
+   System.out.println(Kilograms + "           " + Pounds);
+   Kilograms = Kilograms + 2;
+ }
+
+ }
+}
